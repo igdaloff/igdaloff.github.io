@@ -5,15 +5,21 @@
 .main-logo{
   position: relative;
   margin: 4em auto 1em;
-  width: 270px;
+  width: 80%;
+  max-width: 270px;
 }
 
 .main-subhead{
   width: 50%;
+  max-width: 440px;
   margin: 0 auto 1em;
   @extend .serif;
   font-size: 1.5em;
   font-weight: 100;
+
+  @include smaller-than(medium){
+    width: 90%;
+  }
 }
 
 .text-number{
