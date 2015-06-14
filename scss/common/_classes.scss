@@ -1,0 +1,23 @@
+// ==============================
+// Global Sass Classes and Mixins
+// ==============================
+
+// $TRANSITIONS
+.transition{
+	@include transition(all 0.4s linear);
+}
+
+
+
+
+// $CLEARFIX
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  visibility: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}

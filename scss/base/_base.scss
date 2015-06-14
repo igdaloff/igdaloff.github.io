@@ -1,0 +1,16 @@
+// =======================
+// $Base Styles
+// =======================
+
+body, html {
+  height: 100%;
+  background: $tan;
+}
+
+@include larger-than(large) {
+
+  body {
+    height: auto;
+    min-height: 100%;
+  }
+}

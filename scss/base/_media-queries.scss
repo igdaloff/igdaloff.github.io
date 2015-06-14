@@ -1,0 +1,26 @@
+// =========================
+// $Media Query Definitions
+// =========================
+$mqs: (
+  small: 25em, // 400
+  medium: 40em, // 640
+  large: 50em, //800
+  extra-large: 64em, // 1024px
+  huge: 100em, // 1600
+);
+
+@mixin smaller-than($size) {
+
+  $width: map-get($mqs, $size);
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin larger-than($size) {
+
+  $width: map-get($mqs, $size);
+  @media (min-width: $width) {
+    @content;
+  }
+}
